@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Shadman Rabby</title>
+<meta name="description" content="Selected software projects by Shadman Rabby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <a href="index.html" class="wordmark">SR</a>
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+  <nav class="side-nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" class="is-active" aria-current="page">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <div class="sidebar-bottom">
+    <a href="mailto:shadmanrabby.cse@gmail.com">Email</a>
+    <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</aside>
+  <main class="content">
+    <h1 class="page-title">Projects</h1>
+
+    <div class="project-grid">
+      <a class="project-card" href="https://github.com/shadman85/OMR-Evaluator" target="_blank" rel="noopener">
+        <h3>OMR Sheet Evaluator</h3>
+        <p>Processes uploaded OMR sheets with filtering, thresholding, and morphological operations to extract MCQ answers, supporting batch uploads and per-student result storage. Python, OpenCV, JS, PHP, MySQL.</p>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+      <a class="project-card" href="https://github.com/shadman85/Find-the-best-hospital" target="_blank" rel="noopener">
+        <h3>Finding Best Hospital</h3>
+        <p>Android application for comparing the services of registered hospitals and clinics. Java, Firebase.</p>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+      <a class="project-card" href="https://github.com/shadman85/Fruit-Slicing-Game" target="_blank" rel="noopener">
+        <h3>Fruit Slicing Game</h3>
+        <p>A 3D fruit-slicing game built with OpenGL v3.3.</p>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+    </div>
+
+    <footer class="page-footer">
+      <p>© <span id="year"></span> Shadman Rabby. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+    </footer>
+  </main>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

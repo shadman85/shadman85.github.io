@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Shadman Rabby</title>
+<meta name="description" content="Research interests and research experience of Shadman Rabby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <a href="index.html" class="wordmark">SR</a>
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+  <nav class="side-nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="research.html" class="is-active" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <div class="sidebar-bottom">
+    <a href="mailto:shadmanrabby.cse@gmail.com">Email</a>
+    <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</aside>
+  <main class="content">
+    <h1 class="page-title">Research</h1>
+
+    <ul class="hero-interests">
+      <li>Computer Vision</li>
+      <li>Trustworthy &amp; Safe Multimodal AI</li>
+      <li>VLM Hallucination &amp; Robustness</li>
+      <li>Digital Media Forensics</li>
+      <li>Multimodal Learning &amp; Reasoning</li>
+    </ul>
+
+    <h2 class="subhead-lg">Research Experience</h2>
+
+    <article class="research-card">
+      <div class="entry-head">
+        <h3>Moral Sycophancy in Vision Language Models</h3>
+        <span class="tag tag--submitted">Submitted · ACL ARR Aug 2026</span>
+      </div>
+      <p class="entry-sub">First Author · Supervised by Dr. Irfan Ahmad, KFUPM</p>
+      <p class="entry-body">
+        Finds that VLMs frequently abandon correct moral judgments once a user
+        disagrees, even without new evidence — and are far more likely to shift
+        from right to wrong than the reverse, revealing a clear agreement bias.
+        Open-source models are substantially more susceptible than proprietary
+        ones. Proposes two training-free mitigations, CoT+Vis and Pressure-Blind
+        Visual Arbitration; CoT+Vis cuts sycophancy below 3% on both Moralise and
+        MM-MoralBench.
+      </p>
+      <p class="entry-links">
+        <a href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener">Pre-print (arXiv:2602.08311)</a>
+        · Inference cost funded by SDAIA–KFUPM Joint Research Center for AI
+      </p>
+    </article>
+
+    <article class="research-card">
+      <div class="entry-head">
+        <h3>Visual Hallucination Reduction: An Input-Level Approach for Multimodal Language Models</h3>
+        <span class="tag tag--submitted">Submitted · Multimedia Systems, Springer</span>
+      </div>
+      <p class="entry-sub">Second Author · Supervised by Sabbir Ahmed, IUT</p>
+      <p class="entry-body">
+        Proposes a model-agnostic, adaptive image-preprocessing method that
+        reduces visual hallucination in LLMs without retraining — choosing
+        noise-reduced, edge-enhanced, or original images per question type. Cuts
+        hallucinations by 44.3%, improving factual grounding and reliability.
+      </p>
+      <p class="entry-links">
+        <a href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener">Pre-print version</a>
+      </p>
+    </article>
+
+    <article class="research-card">
+      <div class="entry-head">
+        <h3>Copy-Move Forgery Detection Utilizing SIFT and FLANN with Optimized Keypoint Matching</h3>
+        <span class="tag tag--published">ICCIT 2024</span>
+      </div>
+      <p class="entry-sub">Undergraduate Thesis · Supervised by Dr. Sk Md. Masudul Ahsan, KUET</p>
+      <p class="entry-body">
+        A copy-move forgery detection method using SIFT keypoint extraction and
+        FLANN matching with Lowe's ratio test, classifying an image as forged
+        once at least two keypoint pairs match, and visualizing suspected source
+        and copied regions with colored patches. Reached F1-scores of 95% on
+        MICC-F220 and 81% on MICC-F2000.
+      </p>
+      <p class="entry-links">
+        <a href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener">Paper (IEEE Xplore)</a>
+        · Best Technical Presentation of the Session Award
+      </p>
+    </article>
+
+    <footer class="page-footer">
+      <p>© <span id="year"></span> Shadman Rabby. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+    </footer>
+  </main>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

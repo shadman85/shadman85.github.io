@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Shadman Rabby</title>
+<meta name="description" content="Contact details for Shadman Rabby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <a href="index.html" class="wordmark">SR</a>
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+  <nav class="side-nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html" class="is-active" aria-current="page">Contact</a>
+  </nav>
+  <div class="sidebar-bottom">
+    <a href="mailto:shadmanrabby.cse@gmail.com">Email</a>
+    <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</aside>
+  <main class="content">
+    <h1 class="page-title">Get in Touch</h1>
+    <p class="contact-intro">
+      I'm applying to PhD programs in computer vision and trustworthy
+      multimodal AI. If you're a prospective advisor or collaborator, I'd love
+      to hear from you.
+    </p>
+    <ul class="contact-list">
+      <li><span class="skills-label">Email</span><a href="mailto:shadmanrabby.cse@gmail.com">shadmanrabby.cse@gmail.com</a></li>
+      <li><span class="skills-label">Google Scholar</span><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com/citations</a></li>
+      <li><span class="skills-label">LinkedIn</span><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">linkedin.com/in/shadman-rabby</a></li>
+      <li><span class="skills-label">GitHub</span><a href="https://github.com/shadman85" target="_blank" rel="noopener">github.com/shadman85</a></li>
+    </ul>
+
+    <footer class="page-footer">
+      <p>© <span id="year"></span> Shadman Rabby. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+    </footer>
+  </main>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
