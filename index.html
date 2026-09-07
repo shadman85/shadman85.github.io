@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadman Rabby — Computer Vision & Multimodal AI Research</title>
+<meta name="description" content="Shadman Rabby — Lecturer, CSE, Daffodil International University. Research in Computer Vision, Trustworthy & Safe Multimodal AI, and Vision-Language Models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="frame-corner frame-corner--tl" aria-hidden="true"></div>
+<div class="frame-corner frame-corner--br" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="#top">SR</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -------------------------------------------------- -->
+  <section class="hero wrap">
+    <p class="eyebrow">Lecturer, Dept. of CSE · Daffodil International University</p>
+    <h1>Shadman Rabby</h1>
+    <p class="hero-tagline">
+      I study how vision and language models fail — and how to make them more
+      honest, robust, and trustworthy. My work spans multimodal hallucination,
+      moral sycophancy in VLMs, and digital media forensics.
+    </p>
+    <ul class="hero-interests">
+      <li>Computer Vision</li>
+      <li>Trustworthy &amp; Safe Multimodal AI</li>
+      <li>VLM Hallucination &amp; Robustness</li>
+      <li>Digital Media Forensics</li>
+      <li>Multimodal Learning &amp; Reasoning</li>
+    </ul>
+    <div class="hero-links">
+      <a href="mailto:shadmanrabby.cse@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a>
+      <a class="hero-links__cv" href="cv.pdf" target="_blank" rel="noopener">Download CV ↓</a>
+    </div>
+  </section>
+
+  <!-- ABOUT / EDUCATION -------------------------------------- -->
+  <section id="about" class="section wrap">
+    <h2><span class="section-mark"></span>Education</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>M.Sc. in Computer Science and Engineering</h3>
+        <span class="entry-date">Aug 2025 – Present</span>
+      </div>
+      <p class="entry-sub">University of Dhaka</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>B.Sc. in Computer Science and Engineering</h3>
+        <span class="entry-date">Jan 2019 – Mar 2024</span>
+      </div>
+      <p class="entry-sub">Khulna University of Engineering &amp; Technology (KUET)</p>
+      <p class="entry-body">CGPA: 3.57 / 4.00 — First Class</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH EXPERIENCE ------------------------------------ -->
+  <section id="research" class="section wrap">
+    <h2><span class="section-mark"></span>Research Experience</h2>
+
+    <article class="research-card">
+      <div class="entry-head">
+        <h3>Moral Sycophancy in Vision Language Models</h3>
+        <span class="tag tag--submitted">Submitted · ACL ARR Aug 2026</span>
+      </div>
+      <p class="entry-sub">First Author · Supervised by Dr. Irfan Ahmad, KFUPM</p>
+      <p class="entry-body">
+        Finds that VLMs frequently abandon correct moral judgments once a user
+        disagrees, even without new evidence — and are far more likely to shift
+        from right to wrong than the reverse, revealing a clear agreement bias.
+        Open-source models are substantially more susceptible than proprietary
+        ones. Proposes two training-free mitigations, CoT+Vis and Pressure-Blind
+        Visual Arbitration; CoT+Vis cuts sycophancy below 3% on both Moralise and
+        MM-MoralBench.
+      </p>
+      <p class="entry-links">
+        <a href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener">Pre-print (arXiv:2602.08311)</a>
+        · Inference cost funded by SDAIA–KFUPM Joint Research Center for AI
+      </p>
+    </article>
+
+    <article class="research-card">
+      <div class="entry-head">
+        <h3>Visual Hallucination Reduction: An Input-Level Approach for Multimodal Language Models</h3>
+        <span class="tag tag--submitted">Submitted · Multimedia Systems, Springer</span>
+      </div>
+      <p class="entry-sub">Second Author · Supervised by Sabbir Ahmed, IUT</p>
+      <p class="entry-body">
+        Proposes a model-agnostic, adaptive image-preprocessing method that
+        reduces visual hallucination in LLMs without retraining — choosing
+        noise-reduced, edge-enhanced, or original images per question type. Cuts
+        hallucinations by 44.3%, improving factual grounding and reliability.
+      </p>
+      <p class="entry-links">
+        <a href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener">Pre-print version</a>
+      </p>
+    </article>
+
+    <article class="research-card">
+      <div class="entry-head">
+        <h3>Copy-Move Forgery Detection Utilizing SIFT and FLANN with Optimized Keypoint Matching</h3>
+        <span class="tag tag--published">ICCIT 2024</span>
+      </div>
+      <p class="entry-sub">Undergraduate Thesis · Supervised by Dr. Sk Md. Masudul Ahsan, KUET</p>
+      <p class="entry-body">
+        A copy-move forgery detection method using SIFT keypoint extraction and
+        FLANN matching with Lowe's ratio test, classifying an image as forged
+        once at least two keypoint pairs match, and visualizing suspected source
+        and copied regions with colored patches. Reached F1-scores of 95% on
+        MICC-F220 and 81% on MICC-F2000.
+      </p>
+      <p class="entry-links">
+        <a href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener">Paper (IEEE Xplore)</a>
+        · Best Technical Presentation of the Session Award
+      </p>
+    </article>
+  </section>
+
+  <!-- PUBLICATIONS -------------------------------------------- -->
+  <section id="publications" class="section wrap">
+    <h2><span class="section-mark"></span>Publications</h2>
+    <ol class="pub-list">
+      <li>
+        <span class="pub-id">[C1]</span>
+        Rabby, Shadman, and Sk Md Masudul Ahsan. “Copy-Move Forgery Detection
+        Utilizing SIFT and FLANN with Optimized Keypoint Matching.” In
+        <em>2024 27th International Conference on Computer and Information
+        Technology (ICCIT)</em>, pp. 2237–2242. IEEE, 2024.
+      </li>
+      <li>
+        <span class="pub-id">[A1]</span>
+        Rabby, Shadman, Md Hefzul Hossain Papon, Sabbir Ahmed, Nokimul Hasan
+        Arif, A. B. M. Rahman, and Irfan Ahmad. “Moral Sycophancy in Vision
+        Language Models.” <em>arXiv preprint arXiv:2602.08311</em> (2026).
+      </li>
+      <li>
+        <span class="pub-id">[A2]</span>
+        Arif, Nokimul Hasan, Shadman Rabby, Md Hefzul Hossain Papon, and Sabbir
+        Ahmed. “Visual Hallucination Reduction: An Input-Level Approach for
+        Multimodal Language Model.” (2025).
+      </li>
+    </ol>
+    <p class="pub-key">C = Conference &nbsp;·&nbsp; A = arXiv.org</p>
+
+    <h3 class="subhead">Papers in Preparation</h3>
+    <ul class="prep-list">
+      <li>Md. Al-Amin-Al-Noor, Shadman Rabby. <em>Evaluating the Robustness of Large Vision-Language Model–Powered Autonomous Agents Against Adversarial Spam Attacks in Computer Task Execution.</em></li>
+      <li>Shadman Rabby, Chowdhury Farhan Ahmed. <em>Cross-Modal Evidence Reasoning for Multimodal Fake News Detection in Video News.</em></li>
+      <li>Siddik Howlader, Shadman Rabby. <em>Cross-Linguistic Validation of Dyslexia Simulation via Visual-Word-Form Units: A Bangla Extension.</em></li>
+    </ul>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE ---------------------------------- -->
+  <section id="experience" class="section wrap">
+    <h2><span class="section-mark"></span>Professional Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Lecturer, Department of CSE</h3>
+        <span class="entry-date">Jul 2024 – Present</span>
+      </div>
+      <p class="entry-sub">Daffodil International University</p>
+      <ul class="entry-list">
+        <li>Supervising five students on research projects (one graduated)</li>
+        <li>Mentoring 67 students</li>
+        <li>Courses taught: Algorithms, Compiler Design, Programming &amp; Problem Solving, Database Management Systems, Digital Logic Design, Microprocessors &amp; Microcontrollers (theory and lab)</li>
+      </ul>
+    </div>
+
+    <h3 class="subhead">Co-Curricular &amp; Service</h3>
+    <ul class="entry-list entry-list--wide">
+      <li><strong>Advisor</strong> — Computer Programming Club (CPC), ACM wing, DIU <span class="entry-date-inline">2024 – Present</span></li>
+      <li><strong>Member</strong> — Publication &amp; Co-ordination wing, NLP &amp; ML Lab, DIU <span class="entry-date-inline">2024 – Present</span></li>
+      <li><strong>Performance Analyzer</strong> — Special Group Interested in Programming Contest (SGIPC), KUET <span class="entry-date-inline">2020 – 2023</span></li>
+      <li><strong>Ambassador</strong> — IEEE Student Branch, KUET, IEEEXtreme 15.0 <span class="entry-date-inline">2021</span></li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -------------------------------------------------- -->
+  <section id="projects" class="section wrap">
+    <h2><span class="section-mark"></span>Major Projects</h2>
+
+    <div class="project-grid">
+      <a class="project-card" href="https://github.com/shadman85/OMR-Evaluator" target="_blank" rel="noopener">
+        <h3>OMR Sheet Evaluator</h3>
+        <p>Processes uploaded OMR sheets with filtering, thresholding, and morphological operations to extract MCQ answers, supporting batch uploads and per-student result storage. Python, OpenCV, JS, PHP, MySQL.</p>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+      <a class="project-card" href="https://github.com/shadman85/Find-the-best-hospital" target="_blank" rel="noopener">
+        <h3>Finding Best Hospital</h3>
+        <p>Android application for comparing the services of registered hospitals and clinics. Java, Firebase.</p>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+      <a class="project-card" href="https://github.com/shadman85/Fruit-Slicing-Game" target="_blank" rel="noopener">
+        <h3>Fruit Slicing Game</h3>
+        <p>A 3D fruit-slicing game built with OpenGL v3.3.</p>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SKILLS + ACHIEVEMENTS ------------------------------------- -->
+  <section id="skills" class="section wrap">
+    <h2><span class="section-mark"></span>Technical Skills</h2>
+    <div class="skills-grid">
+      <div><span class="skills-label">Programming Languages</span><span>C, C++, Python, Java</span></div>
+      <div><span class="skills-label">Data Analysis</span><span>Scikit-learn, PyTorch</span></div>
+      <div><span class="skills-label">Web Programming</span><span>HTML, CSS, PHP, JavaScript</span></div>
+      <div><span class="skills-label">Databases</span><span>MySQL</span></div>
+      <div><span class="skills-label">Miscellaneous</span><span>Git, LaTeX, Kaggle, NotebookLM</span></div>
+    </div>
+
+    <h3 class="subhead">Competitive Programming</h3>
+    <div class="skills-grid">
+      <div><span class="skills-label">Codeforces</span><a href="https://codeforces.com/profile/shadman85" target="_blank" rel="noopener">shadman85</a> — 570+ solved</div>
+      <div><span class="skills-label">AtCoder</span><a href="https://atcoder.jp/users/shadman85" target="_blank" rel="noopener">shadman85</a> — 63+ solved</div>
+      <div><span class="skills-label">VJudge</span><a href="https://vjudge.net/user/shadman99" target="_blank" rel="noopener">shadman99</a> — 216+ solved</div>
+    </div>
+
+    <h3 class="subhead">Achievements &amp; Scholarship</h3>
+    <ul class="award-list">
+      <li>
+        <span class="award-year">2024</span>
+        <span><strong>Best Technical Presentation of the Session Award</strong> — 27th ICCIT, Cox's Bazar, Bangladesh</span>
+      </li>
+      <li>
+        <span class="award-year">2019–20</span>
+        <span><strong>Dean's List Award</strong> — average GPA 3.75 / 4.00</span>
+      </li>
+      <li>
+        <span class="award-year">2022</span>
+        <span><strong>IEEEXtreme 15.0</strong> — Country Rank 3rd, Global Rank 115th of 2403 teams</span>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- CONTACT / FOOTER --------------------------------------------- -->
+<footer id="contact" class="site-footer">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p>
+      I'm applying to PhD programs in computer vision and trustworthy
+      multimodal AI. If you're a prospective advisor or collaborator, I'd love
+      to hear from you.
+    </p>
+    <div class="footer-links">
+      <a href="mailto:shadmanrabby.cse@gmail.com">shadmanrabby.cse@gmail.com</a>
+      <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="footer-note">© <span id="year"></span> Shadman Rabby. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
