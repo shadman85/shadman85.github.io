@@ -202,6 +202,7 @@ a:focus-visible, .nav-toggle-btn:focus-visible{
 .eyebrow{ font-family: var(--mono); font-size: 13px; color: var(--accent); margin: 0 0 12px; }
 .hero-page h1{ font-size: clamp(2.1rem, 4.5vw, 2.8rem); line-height: 1.05; margin-bottom: .35em; }
 .hero-tagline{ font-size: 1.05rem; color: var(--ink-soft); max-width: 58ch; margin-bottom: 22px; }
+.hero-actions{ display:flex; flex-wrap:wrap; gap:10px; }
 .cv-btn{
   display:inline-block;
   border: 1px solid var(--ink);
@@ -211,8 +212,18 @@ a:focus-visible, .nav-toggle-btn:focus-visible{
   text-decoration:none !important;
 }
 .cv-btn:hover{ background: var(--ink); color: var(--paper) !important; }
+.cv-btn--ghost{
+  border-color: var(--line);
+  color: var(--ink-soft) !important;
+}
+.cv-btn--ghost:hover{ background: var(--accent-soft); border-color: var(--accent); color: var(--accent) !important; }
 
 .about-block p{ max-width: 62ch; }
+
+.update-list{ list-style:none; padding:0; margin:0; max-width: 62ch; }
+.update-list li{ display:flex; gap:16px; border-top:1px solid var(--line); padding: 10px 0; font-size: 14.5px; color: var(--ink-soft); }
+.update-list li:last-child{ border-bottom: 1px solid var(--line); }
+.update-date{ font-family: var(--mono); font-size: 12.5px; color: var(--accent); min-width: 78px; flex-shrink:0; }
 .glance-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
@@ -233,6 +244,8 @@ a:focus-visible, .nav-toggle-btn:focus-visible{
    Shared section styles (used across inner pages)
 ===================================================== */
 .page-title{ font-size: 1.9rem; margin-bottom: 28px; }
+.page-title.has-intro{ margin-bottom: 8px; }
+.page-intro{ color: var(--muted); font-size: 14.5px; max-width: 62ch; margin: 0 0 28px; }
 .subhead-lg{
   font-size: 1.2rem;
   margin-top: 38px;
@@ -288,8 +301,10 @@ a:focus-visible, .nav-toggle-btn:focus-visible{
 .project-card{ display:block; background: var(--paper-raised); border: 1px solid var(--line); padding: 18px; color: var(--ink); }
 .project-card:hover{ border-color: var(--accent); text-decoration:none; }
 .project-card h3{ font-size: 1rem; margin-bottom: 8px; }
-.project-card p{ font-size: 13.5px; color: var(--ink-soft); margin: 0 0 12px; }
+.project-card p{ font-size: 13.5px; color: var(--ink-soft); margin: 0 0 8px; }
+.project-card .entry-note{ margin-bottom: 12px; }
 .project-link{ font-size: 13px; color: var(--accent); font-family: var(--mono); }
+.entry-note{ font-size: 12.5px; color: var(--muted); font-family: var(--mono); margin: 0; }
 
 .skills-grid{ display:grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 8px; }
 .skills-grid > div{ display:flex; justify-content:space-between; gap:16px; border-top: 1px solid var(--line); padding: 10px 0; font-size: 14.5px; }
