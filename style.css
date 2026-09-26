@@ -15,7 +15,7 @@
   --accent-deep: #2C4F41;
   --accent-soft: #E6ECE7;
   --accent-wash: #F1F4F1;
-  --gold: #96723A;
+  --gold: #846433;
   --gold-soft: #F1EAE0;
   --serif: "Source Serif 4", Georgia, serif;
   --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -433,6 +433,7 @@ img{ max-width: 100%; display:block; }
 /* =====================================================
    Research blocks (two-column, alternating)
 ===================================================== */
+.section-block{ counter-reset: research-idx; }
 .research-block{
   display:grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
@@ -445,8 +446,25 @@ img{ max-width: 100%; display:block; }
   margin-bottom: 26px;
   box-shadow: var(--shadow-card);
   transition: box-shadow .18s ease, border-color .18s ease;
+  position: relative;
+  counter-increment: research-idx;
+}
+.research-block::before{
+  content: counter(research-idx, decimal-leading-zero);
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  color: var(--muted);
+  background: var(--paper);
+  padding: 0 8px;
+  line-height: 1.4;
 }
 .research-block:hover{ box-shadow: var(--shadow-card-hover); border-color: #CBD2CB; }
+.research-block .metric-num{ font-size: 1.85rem; }
 .research-block--reverse{ grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
 .research-block--reverse .research-media{ order: -1; }
 .research-body{ min-width: 0; }
@@ -593,7 +611,8 @@ img{ max-width: 100%; display:block; }
    Skills
 ===================================================== */
 .skill-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: 18px; }
-.skill-card{ background: var(--paper-raised); border:1px solid var(--line); border-radius: var(--radius-m); padding: 18px 20px; box-shadow: var(--shadow-card); }
+.skill-card{ background: var(--paper-raised); border:1px solid var(--line); border-radius: var(--radius-m); padding: 18px 20px; box-shadow: var(--shadow-card); transition: box-shadow .18s ease, border-color .18s ease; }
+.skill-card:hover{ box-shadow: var(--shadow-card-hover); border-color: #CBD2CB; }
 .skill-card-head{ display:flex; align-items:center; gap:10px; margin-bottom: 12px; }
 .skill-card-icon{ width:30px; height:30px; border-radius:8px; background: var(--accent-soft); color: var(--accent-deep); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
 .skill-card h3{ font-size: .98rem; margin:0; }
@@ -610,7 +629,8 @@ img{ max-width: 100%; display:block; }
    Achievements
 ===================================================== */
 .achieve-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 20px; }
-.achieve-card{ background: var(--paper-raised); border:1px solid var(--line); border-radius: var(--radius-l); overflow:hidden; box-shadow: var(--shadow-card); display:flex; flex-direction:column; }
+.achieve-card{ background: var(--paper-raised); border:1px solid var(--line); border-radius: var(--radius-l); overflow:hidden; box-shadow: var(--shadow-card); display:flex; flex-direction:column; transition: box-shadow .18s ease, border-color .18s ease; }
+.achieve-card:hover{ box-shadow: var(--shadow-card-hover); border-color: #CBD2CB; }
 .achieve-card .media-placeholder{ border-radius:0; }
 .achieve-card-body{ padding: 18px 20px 20px; }
 .achieve-year{ font-family: var(--mono); color: var(--gold); font-size: 12.5px; }
