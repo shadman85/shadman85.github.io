@@ -8,6 +8,8 @@
 <link rel="canonical" href="https://shadman85.github.io/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="theme-color" content="#3F6E5C">
 <meta property="og:type" content="website">
@@ -85,36 +87,49 @@
       </div>
     </section>
 
-    <section class="about-block">
-      <div class="section-head"><h2><span class="section-mark"></span>About Me</h2></div>
-      <p>
-        I'm an M.Sc. student in Computer Science and Engineering at the
-        University of Dhaka and a Lecturer in the Department of CSE at
-        Daffodil International University, where I supervise student research
-        and teach courses spanning algorithms, compiler design, and database
-        systems. I completed my B.Sc. in CSE at Khulna University of
-        Engineering &amp; Technology (KUET) in 2024.
-      </p>
-      <p>
-        My research centers on making vision-language models more trustworthy:
-        detecting and reducing hallucination, studying moral sycophancy under
-        social pressure, and building forensic tools for digital media
-        forgery detection. I'm currently applying to PhD programs to continue
-        this work at a larger scale.
-      </p>
-      <div class="glance-grid">
-        <div><span class="glance-num">3</span><span class="glance-label">Papers &amp; pre-prints</span></div>
-        <div><span class="glance-num">67</span><span class="glance-label">Students mentored</span></div>
-        <div><span class="glance-num">570+</span><span class="glance-label">Codeforces problems solved</span></div>
-      </div>
-      <p class="about-cta">
-        Browse <a href="research.html">Research</a>, <a href="publications.html">Publications</a>,
-        and <a href="projects.html">Selected Projects</a>, or see the full
-        <a href="education.html">Education</a> and
-        <a href="experience.html">Experience</a> history using the sidebar —
-        or just <a href="contact.html">get in touch</a>.
-      </p>
-    </section>
+    <div class="home-dash">
+      <section class="about-block">
+        <div class="section-head"><h2><span class="section-mark"></span>About Me</h2></div>
+        <p>
+          I'm an M.Sc. student in Computer Science and Engineering at the
+          University of Dhaka and a Lecturer in the Department of CSE at
+          Daffodil International University, where I supervise student research
+          and teach courses spanning algorithms, compiler design, and database
+          systems. I completed my B.Sc. in CSE at Khulna University of
+          Engineering &amp; Technology (KUET) in 2024.
+        </p>
+        <p>
+          My research centers on making vision-language models more trustworthy:
+          detecting and reducing hallucination, studying moral sycophancy under
+          social pressure, and building forensic tools for digital media
+          forgery detection. I'm currently applying to PhD programs to continue
+          this work at a larger scale.
+        </p>
+        <div class="glance-grid">
+          <div><span class="glance-num">3</span><span class="glance-label">Papers &amp; pre-prints</span></div>
+          <div><span class="glance-num">67</span><span class="glance-label">Students mentored</span></div>
+          <div><span class="glance-num">570+</span><span class="glance-label">Codeforces problems solved</span></div>
+        </div>
+        <p class="about-cta">
+          Browse <a href="research.html">Research</a>, <a href="publications.html">Publications</a>,
+          and <a href="projects.html">Selected Projects</a>, or see the full
+          <a href="education.html">Education</a> and
+          <a href="experience.html">Experience</a> history using the sidebar —
+          or just <a href="contact.html">get in touch</a>.
+        </p>
+      </section>
+
+      <aside class="status-card">
+        <h2>Current Status &amp; Recent Updates</h2>
+        <ul class="update-list">
+          <li><span class="update-date">Aug 2026</span><span>&ldquo;Moral Sycophancy in Vision Language Models&rdquo; submitted to the ACL ARR August 2026 cycle.</span></li>
+          <li><span class="update-date">Aug 2025</span><span>Began M.Sc. in Computer Science and Engineering at the University of Dhaka.</span></li>
+          <li><span class="update-date">Dec 2024</span><span>Presented &ldquo;Copy-Move Forgery Detection Utilizing SIFT and FLANN&rdquo; at ICCIT 2024, Cox's Bazar — received the Best Technical Presentation of the Session Award.</span></li>
+          <li><span class="update-date">Jul 2024</span><span>Joined Daffodil International University as Lecturer, Dept. of CSE.</span></li>
+          <li><span class="update-date">Mar 2024</span><span>Completed B.Sc. in CSE at Khulna University of Engineering &amp; Technology (KUET), First Class.</span></li>
+        </ul>
+      </aside>
+    </div>
 
     <section class="section-block">
       <div class="section-head">
@@ -134,7 +149,7 @@
         <h2><span class="section-mark"></span>Selected Research</h2>
         <a class="section-more" href="research.html">All research →</a>
       </div>
-      <div class="preview-grid">
+      <div class="preview-grid grid-cols-2">
         <a class="preview-card" href="research.html">
           <div class="media-placeholder media-placeholder--3x2 has-shadow" role="img" aria-label="Research Figure placeholder — add image"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4.5" width="18" height="15" rx="2"/><circle cx="8.3" cy="9.5" r="1.6"/><path d="m4 17 5-5 3.5 3.5L16 11l4 4.5"/></svg><span class="media-placeholder-label">Research Figure</span><span class="media-placeholder-sub">Moral Sycophancy in VLMs</span></div>
           <div class="preview-card-body">
@@ -159,7 +174,7 @@
         <h2><span class="section-mark"></span>Selected Projects</h2>
         <a class="section-more" href="projects.html">All projects →</a>
       </div>
-      <div class="preview-grid">
+      <div class="preview-grid grid-cols-2">
         <a class="preview-card" href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener">
           <div class="media-placeholder media-placeholder--3x2 has-shadow" role="img" aria-label="Project Screenshot placeholder — add image"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.5 7 3.5 12l5 5M15.5 7l5 5-5 5M13.5 5 10.5 19"/></svg><span class="media-placeholder-label">Project Screenshot</span><span class="media-placeholder-sub">Preemptive Hallucination Reduction</span></div>
           <div class="preview-card-body">
@@ -177,19 +192,6 @@
           </div>
         </a>
       </div>
-    </section>
-
-    <section class="section-block">
-      <div class="section-head">
-        <h2><span class="section-mark"></span>Recent Updates</h2>
-      </div>
-      <ul class="update-list">
-        <li><span class="update-date">Aug 2026</span><span>&ldquo;Moral Sycophancy in Vision Language Models&rdquo; submitted to the ACL ARR August 2026 cycle.</span></li>
-        <li><span class="update-date">Aug 2025</span><span>Began M.Sc. in Computer Science and Engineering at the University of Dhaka.</span></li>
-        <li><span class="update-date">Dec 2024</span><span>Presented &ldquo;Copy-Move Forgery Detection Utilizing SIFT and FLANN&rdquo; at ICCIT 2024, Cox's Bazar — received the Best Technical Presentation of the Session Award.</span></li>
-        <li><span class="update-date">Jul 2024</span><span>Joined Daffodil International University as Lecturer, Dept. of CSE.</span></li>
-        <li><span class="update-date">Mar 2024</span><span>Completed B.Sc. in CSE at Khulna University of Engineering &amp; Technology (KUET), First Class.</span></li>
-      </ul>
     </section>
 
     <section class="section-block">
