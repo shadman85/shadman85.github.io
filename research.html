@@ -30,11 +30,10 @@
 </head>
 <body>
 
-<!-- ======================= Top navigation ======================= -->
 <header class="site-nav">
   <div class="nav-inner">
     <a class="brand" href="index.html">Shadman Rabby</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
     <nav class="nav-links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="education.html">Education</a>
@@ -51,191 +50,185 @@
 
 <div class="layout">
 
-  <!-- ======================= Profile sidebar ======================= -->
   <aside class="sidebar">
     <img class="portrait" src="assets/Shadman_Rabby.jpg" alt="Portrait of Shadman Rabby" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-    <div class="portrait-fallback">SR</div>
-    <h1>Shadman Rabby</h1>
+    <div class="portrait-fallback" aria-hidden="true">SR</div>
+    <p class="side-name">Shadman Rabby</p>
     <p class="role">Lecturer, Dept. of CSE</p>
     <p class="affiliation">Daffodil International University</p>
     <p class="affiliation">M.Sc. student, University of Dhaka</p>
     <ul class="profile-links">
       <li><a href="mailto:shadmanrabby.cse@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
-      <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="https://github.com/shadman85" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-      <li><a href="cv.pdf" target="_blank" rel="noopener" title="Download CV" aria-label="Download CV"><i class="fa-solid fa-file-pdf"></i></a></li>
+      <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
     </ul>
   </aside>
 
-  <!-- ======================= Main content ======================= -->
   <main class="content">
-    <section class="page-hero">
+
+    <section class="page-head">
       <p class="eyebrow">What I Work On</p>
-      <h1 class="page-title has-intro">Research</h1>
+      <h1 class="page-title">Research</h1>
       <p class="page-intro">My work asks where vision-language models break, and how to make them more reliable without retraining them from scratch — spanning hallucination reduction, moral sycophancy under social pressure, and forensic detection of manipulated media.</p>
+      <ul class="chips" style="margin-top:16px;">
+        <li>Computer Vision</li>
+        <li>Trustworthy &amp; Safe Multimodal AI</li>
+        <li>VLM Hallucination &amp; Robustness</li>
+        <li>Digital Media Forensics</li>
+        <li>Multimodal Learning &amp; Reasoning</li>
+      </ul>
     </section>
 
-    <ul class="hero-interests">
-      <li>Computer Vision</li>
-      <li>Trustworthy &amp; Safe Multimodal AI</li>
-      <li>VLM Hallucination &amp; Robustness</li>
-      <li>Digital Media Forensics</li>
-      <li>Multimodal Learning &amp; Reasoning</li>
-    </ul>
+    <section id="research-experience">
+      <h2>Research Experience</h2>
 
-    <section class="section-block">
-      <div class="section-head"><h2>Research Experience</h2></div>
+      <div class="entry">
+        <div class="entry-media">
+          <img class="contain" src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
+          <img class="contain" src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy">
+        </div>
+        <div class="entry-info">
+          <span class="entry-title">Moral Sycophancy in Vision Language Models</span>
+          <div class="tags"><span class="tag tag--preprint">Submitted · ACL ARR Aug 2026</span><span class="tag tag--role">First Author</span></div>
+          <p class="entry-sub">Supervised by Dr. Irfan Ahmad, KFUPM</p>
+          <div class="metrics"><div class="metric"><span class="metric-num">&lt;3%</span><span class="metric-label">sycophancy with CoT+Vis</span></div></div>
+          <p class="entry-links"><a href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>arXiv:2602.08311</a></p>
+          <p class="entry-note">Inference cost funded by SDAIA–KFUPM Joint Research Center for AI</p>
+          <details class="summary-toggle">
+            <summary>Summary</summary>
+            <div class="summary-panel">
+              <ul class="detail-list">
+                <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
+                <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
+                <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
+                <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
 
-      <!-- ========== 1. Moral Sycophancy ========== -->
-      <article class="pub-entry">
-        <div class="pub-thumb">
-          <img src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
+      <div class="entry">
+        <div class="entry-media">
+          <img class="contain" src="assets/Datasethelp.png" alt="Dataset help diagram" loading="lazy">
+          <img class="contain" src="assets/avg_nli_compare4.png" alt="Average NLI comparison results" loading="lazy">
         </div>
-        <div class="pub-info">
-          <a class="pub-title" href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener">Moral Sycophancy in Vision Language Models</a>
-          <div class="research-meta-row">
-            <span class="tag tag--preprint">Submitted · ACL ARR Aug 2026</span>
-            <span class="tag">First Author</span>
-          </div>
-          <div class="pub-authors">Supervised by Dr. Irfan Ahmad, KFUPM</div>
-          <div class="pub-links">
-            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="summary-1">Summary</button>
-            <a class="link-btn" href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener" title="arXiv:2602.08311">Pre-print</a>
-          </div>
-          <div class="summary-panel" id="summary-1" hidden>
-            <ul class="research-detail-list">
-              <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
-              <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
-              <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
-              <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
-            </ul>
-            <div class="metric-row">
-              <div class="metric-card"><span class="metric-num">&lt;3%</span><span class="metric-label">sycophancy with CoT+Vis</span></div>
+        <div class="entry-info">
+          <span class="entry-title">Visual Hallucination Reduction: An Input-Level Approach for Multimodal Language Models</span>
+          <div class="tags"><span class="tag tag--preprint">Submitted · Multimedia Systems, Springer</span><span class="tag tag--role">Second Author</span></div>
+          <p class="entry-sub">Supervised by Sabbir Ahmed, IUT</p>
+          <div class="metrics"><div class="metric"><span class="metric-num">44.3%</span><span class="metric-label">hallucination reduction</span></div></div>
+          <p class="entry-links">
+            <a href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>Pre-print</a>
+            <span class="sep">/</span>
+            <a href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Code</a>
+          </p>
+          <details class="summary-toggle">
+            <summary>Summary</summary>
+            <div class="summary-panel">
+              <ul class="detail-list">
+                <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
+                <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
+                <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
+                <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
+              </ul>
             </div>
-            <div class="fig-row">
-              <img src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
-              <img src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy">
-            </div>
-            <p class="entry-note">Inference cost funded by SDAIA–KFUPM Joint Research Center for AI</p>
-          </div>
+          </details>
         </div>
-      </article>
+      </div>
 
-      <!-- ========== 2. Visual Hallucination Reduction ========== -->
-      <article class="pub-entry">
-        <div class="pub-thumb">
-          <img src="assets/Datasethelp.png" alt="Dataset help diagram" loading="lazy">
-        </div>
-        <div class="pub-info">
-          <a class="pub-title" href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener">Visual Hallucination Reduction: An Input-Level Approach for Multimodal Language Models</a>
-          <div class="research-meta-row">
-            <span class="tag tag--preprint">Submitted · Multimedia Systems, Springer</span>
-            <span class="tag">Second Author</span>
-          </div>
-          <div class="pub-authors">Supervised by Sabbir Ahmed, IUT</div>
-          <div class="pub-links">
-            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="summary-2">Summary</button>
-            <a class="link-btn" href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener">Pre-print</a>
-            <a class="link-btn" href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
-          </div>
-          <div class="summary-panel" id="summary-2" hidden>
-            <ul class="research-detail-list">
-              <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
-              <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
-              <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
-              <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
-            </ul>
-            <div class="metric-row">
-              <div class="metric-card"><span class="metric-num">44.3%</span><span class="metric-label">hallucination reduction</span></div>
-            </div>
-            <div class="fig-row">
-              <img src="assets/Datasethelp.png" alt="Dataset help diagram" loading="lazy">
-              <img src="assets/avg_nli_compare4.png" alt="Average NLI comparison results" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- ========== 3. Copy-Move Forgery Detection ========== -->
-      <article class="pub-entry">
-        <div class="pub-thumb">
+      <div class="entry">
+        <div class="entry-media">
           <img src="assets/copy_move1.png" alt="Copy-move forgery detection steps: SIFT keypoint extraction and FLANN matching" loading="lazy">
+          <img src="assets/copy_move2.png" alt="Qualitative copy-move forgery results showing matched keypoints and identified source/copied regions" loading="lazy">
         </div>
-        <div class="pub-info">
-          <a class="pub-title" href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener">Copy-Move Forgery Detection Utilizing SIFT and FLANN with Optimized Keypoint Matching</a>
-          <div class="research-meta-row">
-            <span class="tag tag--published">ICCIT 2024</span>
-            <span class="tag">Undergraduate Thesis</span>
+        <div class="entry-info">
+          <span class="entry-title">Copy-Move Forgery Detection Utilizing SIFT and FLANN with Optimized Keypoint Matching</span>
+          <div class="tags"><span class="tag tag--published">ICCIT 2024</span><span class="tag tag--role">Undergraduate Thesis</span></div>
+          <p class="entry-sub">Supervised by Dr. Sk Md. Masudul Ahsan, KUET</p>
+          <div class="metrics">
+            <div class="metric"><span class="metric-num">95%</span><span class="metric-label">F1-score, MICC-F220</span></div>
+            <div class="metric"><span class="metric-num">81%</span><span class="metric-label">F1-score, MICC-F2000</span></div>
           </div>
-          <div class="pub-authors">Supervised by Dr. Sk Md. Masudul Ahsan, KUET</div>
-          <div class="pub-links">
-            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="summary-3">Summary</button>
-            <!-- No pre-print link existed for this paper. To add one, uncomment and paste the URL:
-            <a class="link-btn" href="PASTE_PREPRINT_URL" target="_blank" rel="noopener">Pre-print</a> -->
-            <a class="link-btn" href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener">IEEE Xplore</a>
-            <a class="link-btn" href="achievements.html"><i class="fa-solid fa-award"></i> Best Technical Presentation Award</a>
-          </div>
-          <div class="summary-panel" id="summary-3" hidden>
-            <ul class="research-detail-list">
-              <li><b>Problem —</b> Copy-move forgery — duplicating a region within the same image — is a common and hard-to-detect form of digital media manipulation.</li>
-              <li><b>Method —</b> SIFT keypoint extraction paired with FLANN matching and Lowe's ratio test for reliable correspondence; an image is classified as forged once at least two keypoint pairs match, with colored patches visualizing the suspected source and copied regions.</li>
-              <li><b>Datasets —</b> MICC-F220 and MICC-F2000.</li>
-            </ul>
-            <div class="metric-row">
-              <div class="metric-card"><span class="metric-num">95%</span><span class="metric-label">F1-score, MICC-F220</span></div>
-              <div class="metric-card"><span class="metric-num">81%</span><span class="metric-label">F1-score, MICC-F2000</span></div>
+          <p class="entry-links">
+            <a href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i>IEEE Xplore</a>
+            <span class="sep">/</span>
+            <a href="achievements.html"><i class="fa-solid fa-award"></i>Best Technical Presentation Award</a>
+          </p>
+          <details class="summary-toggle">
+            <summary>Summary</summary>
+            <div class="summary-panel">
+              <ul class="detail-list">
+                <li><b>Problem —</b> Copy-move forgery — duplicating a region within the same image — is a common and hard-to-detect form of digital media manipulation.</li>
+                <li><b>Method —</b> SIFT keypoint extraction paired with FLANN matching and Lowe's ratio test for reliable correspondence; an image is classified as forged once at least two keypoint pairs match, with colored patches visualizing the suspected source and copied regions.</li>
+                <li><b>Datasets —</b> MICC-F220 and MICC-F2000.</li>
+              </ul>
             </div>
-            <div class="fig-row">
-              <img src="assets/copy_move1.png" alt="Copy-move forgery detection steps: SIFT keypoint extraction and FLANN matching" loading="lazy">
-              <img src="assets/copy_move2.png" alt="Qualitative copy-move forgery results showing matched keypoints and identified source/copied regions" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section-block">
-      <div class="section-head"><h2>Research Directions / Papers in Preparation</h2></div>
-      <p class="page-intro" style="margin-bottom:18px;">Ongoing work, not yet submitted for publication.</p>
-      <div class="prep-grid">
-        <div class="prep-card">
-          <span class="tag tag--prep">In preparation</span>
-          <p>Md. Al-Amin-Al-Noor, Shadman Rabby. <em>Evaluating the Robustness of Large Vision-Language Model–Powered Autonomous Agents Against Adversarial Spam Attacks in Computer Task Execution.</em></p>
-        </div>
-        <div class="prep-card">
-          <span class="tag tag--prep">In preparation</span>
-          <p>Shadman Rabby, Chowdhury Farhan Ahmed. <em>Cross-Modal Evidence Reasoning for Multimodal Fake News Detection in Video News.</em></p>
-        </div>
-        <div class="prep-card">
-          <span class="tag tag--prep">In preparation</span>
-          <p>Siddik Howlader, Shadman Rabby. <em>Cross-Linguistic Validation of Dyslexia Simulation via Visual-Word-Form Units: A Bangla Extension.</em></p>
+          </details>
         </div>
       </div>
     </section>
 
+    <section id="in-preparation">
+      <h2>Research Directions / Papers in Preparation</h2>
+      <p class="section-note">Ongoing work, not yet submitted for publication.</p>
+      <div class="stack">
+        <div class="card"><span class="tag tag--prep">In preparation</span>
+          <p>Md. Al-Amin-Al-Noor, Shadman Rabby. <em>Evaluating the Robustness of Large Vision-Language Model–Powered Autonomous Agents Against Adversarial Spam Attacks in Computer Task Execution.</em></p></div>
+        <div class="card"><span class="tag tag--prep">In preparation</span>
+          <p>Shadman Rabby, Chowdhury Farhan Ahmed. <em>Cross-Modal Evidence Reasoning for Multimodal Fake News Detection in Video News.</em></p></div>
+        <div class="card"><span class="tag tag--prep">In preparation</span>
+          <p>Siddik Howlader, Shadman Rabby. <em>Cross-Linguistic Validation of Dyslexia Simulation via Visual-Word-Form Units: A Bangla Extension.</em></p></div>
+      </div>
+    </section>
+
     <footer class="site-footer">
-      © <span id="year"></span> Shadman Rabby. Built with plain HTML &amp; CSS, hosted on GitHub Pages.
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Shadman Rabby</h4>
+          <p>Lecturer, Dept. of CSE, Daffodil International University · M.Sc. student, University of Dhaka. Researching the reliability of vision-language models — hallucination, sycophancy, and digital media forensics.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Selected Projects</a></li>
+            <li><a href="cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:shadmanrabby.cse@gmail.com">Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Shadman Rabby.</span>
+        <span>Built with plain HTML &amp; CSS, hosted on GitHub Pages.</span>
+      </div>
     </footer>
   </main>
 </div>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  // Mobile navigation toggle
   (function () {
-    var t = document.querySelector('.nav-toggle'), l = document.getElementById('nav-links');
-    t.addEventListener('click', function () { t.setAttribute('aria-expanded', l.classList.toggle('open')); });
-    l.addEventListener('click', function (e) { if (e.target.tagName === 'A') { l.classList.remove('open'); t.setAttribute('aria-expanded', 'false'); } });
-  })();
-  // "Summary" buttons: show / hide the detail panel of each entry
-  document.querySelectorAll('.toggle-btn').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var p = document.getElementById(b.getAttribute('aria-controls')), open = b.getAttribute('aria-expanded') === 'true';
-      b.setAttribute('aria-expanded', String(!open)); p.hidden = open;
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
     });
-  });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+  })();
 </script>
-<noscript><style>.summary-panel[hidden]{display:block}</style></noscript>
 </body>
 </html>
