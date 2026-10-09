@@ -27,6 +27,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<!-- Safety net: guarantees Summary / Pre-print / Code buttons look identical even if a cached or older style.css is loaded.
+     Same rules as in style.css, so you can delete this block once style.css is confirmed up to date. -->
+<style>
+  .entry-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+  .entry-actions .act-btn {
+    -webkit-appearance: none; appearance: none; box-sizing: border-box; margin: 0;
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 5px 16px; border: 1px solid #1772d0; border-radius: 6px;
+    background: transparent; color: #1772d0;
+    font-family: inherit; font-size: 0.9rem; font-weight: 500; line-height: 1.5;
+    text-decoration: none; cursor: pointer; user-select: none;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .entry-actions .act-btn:hover,
+  .entry-actions .summary-btn[aria-expanded="true"] { background: #1772d0; color: #fff; text-decoration: none; }
+  .entry-actions .summary-btn::after { content: "\25BE"; }
+  .entry-actions .summary-btn[aria-expanded="true"]::after { content: "\25B4"; }
+  .summary-panel[hidden] { display: none; }
+</style>
 </head>
 <body>
 
@@ -83,7 +102,7 @@
     <section id="research-experience">
       <h2>Research Experience</h2>
 
-     <div class="entry">
+      <div class="entry">
         <div class="entry-media">
           <img class="contain" src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
           <img class="contain" src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy">
@@ -214,6 +233,8 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile navigation toggle
   (function () {
     var toggle = document.querySelector('.nav-toggle');
     var links = document.getElementById('nav-links');
@@ -225,6 +246,17 @@
       if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
     });
   })();
+
+  // Summary buttons: show / hide the panel each button points to (aria-controls -> panel id)
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.summary-btn');
+    if (!btn) return;
+    var panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if (!panel) return;
+    var isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    panel.hidden = isOpen;
+  });
 </script>
 </body>
 </html>
