@@ -11,7 +11,7 @@
 <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#3F6E5C">
+<meta name="theme-color" content="#1772d0">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shadman Rabby">
 <meta property="og:title" content="Skills — Shadman Rabby">
@@ -24,81 +24,92 @@
 <meta name="twitter:image" content="https://shadman85.github.io/assets/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Shadman Rabby</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="is-active" aria-current="page">Skills</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
 <div class="layout">
-<input type="checkbox" id="nav-toggle" class="nav-toggle">
-<aside class="sidebar">
-  <div class="sidebar-top">
-    <a href="index.html" class="wordmark">SR</a>
-    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </label>
-  </div>
-  <nav class="side-nav">
-      <a href="index.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9.5 10 3l7 6.5"/><path d="M5 8.5V17h10V8.5"/><path d="M8 17v-5h4v5"/></svg><span>Home</span></a>
-      <a href="education.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7.5 10 4l8 3.5-8 3.5-8-3.5Z"/><path d="M5.5 9.3V13c0 1.2 2 2.3 4.5 2.3s4.5-1.1 4.5-2.3V9.3"/><path d="M17 8v5"/></svg><span>Education</span></a>
-      <a href="research.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h4"/><path d="M9 3v4.2L5.3 13a2 2 0 0 0 1.7 3h6a2 2 0 0 0 1.7-3L11 7.2V3"/><path d="M7 12.5h6"/></svg><span>Research</span></a>
-      <a href="publications.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 2.5h7l3 3v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-14a.5.5 0 0 1 .5-.5Z"/><path d="M12 2.5V6h3.2"/><path d="M7 10.2h6M7 12.7h6M7 15.2h3.5"/></svg><span>Publications</span></a>
-      <a href="experience.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="6" width="15" height="10.5" rx="1.5"/><path d="M7 6V4.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V6"/><path d="M2.5 11h15"/></svg><span>Experience</span></a>
-      <a href="projects.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 6 3 10l4 4M13 6l4 4-4 4M11.3 4.3 8.7 15.7"/></svg><span>Projects</span></a>
-      <a href="skills.html" class="is-active" aria-current="page"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.5 17.5 7 10 11.5 2.5 7 10 2.5Z"/><path d="m4.5 10-2 1.3 7.5 4.5 7.5-4.5-2-1.3"/></svg><span>Skills</span></a>
-      <a href="achievements.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="7.2" r="4.2"/><path d="M7.3 10.7 6.3 17l3.7-2 3.7 2-1-6.4"/></svg><span>Achievements</span></a>
-      <a href="contact.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="m3 5.5 7 5.5 7-5.5"/></svg><span>Contact</span></a>
-  </nav>
-  <div class="sidebar-bottom">
-    <a href="mailto:shadmanrabby.cse@gmail.com"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="m3 5.5 7 5.5 7-5.5"/></svg><span>Email</span></a>
-    <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7.5 10 4l8 3.5-8 3.5-8-3.5Z"/><path d="M5.5 9.3V13c0 1.2 2 2.3 4.5 2.3s4.5-1.1 4.5-2.3V9.3"/></svg><span>Google Scholar</span></a>
-    <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="15" height="15" rx="2"/><path d="M6.8 8.5v6M6.8 6.2v.1M10.2 14.5v-3.7c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v3.7"/></svg><span>LinkedIn</span></a>
-    <a href="https://github.com/shadman85" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.2c-4.3 0-7.8 3.5-7.8 7.8 0 3.4 2.2 6.4 5.3 7.4.4.1.5-.2.5-.4v-1.5c-2.2.5-2.6-.9-2.6-.9-.4-.9-.9-1.1-.9-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3-1.8 3.7-3.6 3.9.3.2.5.7.5 1.4v2.1c0 .2.1.5.6.4 3.1-1 5.3-4 5.3-7.4 0-4.3-3.5-7.8-7.8-7.8Z"/></svg><span>GitHub</span></a>
-  </div>
-</aside>
+
+  <aside class="sidebar">
+    <img class="portrait" src="assets/Shadman_Rabby.jpg" alt="Portrait of Shadman Rabby" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="portrait-fallback" aria-hidden="true">SR</div>
+    <p class="side-name">Shadman Rabby</p>
+    <p class="role">Lecturer, Dept. of CSE</p>
+    <p class="affiliation">Daffodil International University</p>
+    <p class="affiliation">M.Sc. student, University of Dhaka</p>
+    <ul class="profile-links">
+      <li><a href="mailto:shadmanrabby.cse@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+  </aside>
+
   <main class="content">
-    <section class="page-hero">
+    <section class="page-head">
       <p class="eyebrow">Technical Toolkit</p>
-      <h1 class="page-title has-intro">Skills</h1>
+      <h1 class="page-title">Skills</h1>
       <p class="page-intro">Grouped by area, with the research or project each skill has actually been used in, where relevant.</p>
     </section>
+    <section>
+      <div class="grid grid--2">
+        <div class="card">
+          <h3><i class="fa-solid fa-code skill-icon"></i>Programming Languages</h3>
+          <ul class="chips" style="margin-top:8px;"><li>C</li><li>C++</li><li>Python</li><li>Java</li></ul>
+          <p class="skill-context">Python — used throughout the research code; C++ — <a href="projects.html">Fruit Slicing Game</a>; Java — <a href="projects.html">Finding Best Hospital</a>.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-brain skill-icon"></i>Machine Learning &amp; Data</h3>
+          <ul class="chips" style="margin-top:8px;"><li>Scikit-learn</li><li>PyTorch</li></ul>
+          <p class="skill-context">Used in the <a href="research.html">hallucination-reduction</a> and <a href="research.html">moral-sycophancy</a> research.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-eye skill-icon"></i>Computer Vision</h3>
+          <ul class="chips" style="margin-top:8px;"><li>OpenCV</li><li>SIFT / FLANN</li><li>Image Preprocessing</li></ul>
+          <p class="skill-context">Core to the <a href="research.html">copy-move forgery detection</a> thesis and the <a href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer">hallucination-reduction</a> pipeline.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-globe skill-icon"></i>Web / Software</h3>
+          <ul class="chips" style="margin-top:8px;"><li>HTML</li><li>CSS</li><li>PHP</li><li>JavaScript</li></ul>
+          <p class="skill-context">Used in the <a href="projects.html">OMR Sheet Evaluator</a>.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-database skill-icon"></i>Databases</h3>
+          <ul class="chips" style="margin-top:8px;"><li>MySQL</li></ul>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-flask skill-icon"></i>Research Tools</h3>
+          <ul class="chips" style="margin-top:8px;"><li>Git</li><li>LaTeX</li><li>Kaggle</li><li>NotebookLM</li></ul>
+        </div>
+      </div>
+    </section>
 
-    <div class="skill-grid">
-      <div class="skill-card">
-        <div class="skill-card-head"><div class="skill-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.5 7 3.5 12l5 5M15.5 7l5 5-5 5M13.5 5 10.5 19"/></svg></div><h3>Programming Languages</h3></div>
-        <ul class="skill-tags"><li>C</li><li>C++</li><li>Python</li><li>Java</li></ul>
-        <p class="skill-context">Python — used throughout the research code; C++ — <a href="projects.html">Fruit Slicing Game</a>; Java — <a href="projects.html">Finding Best Hospital</a>.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-head"><div class="skill-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V10M10 20V4M16 20v-7M20 20H4"/></svg></div><h3>Machine Learning &amp; Data</h3></div>
-        <ul class="skill-tags"><li>Scikit-learn</li><li>PyTorch</li></ul>
-        <p class="skill-context">Used in the <a href="research.html">hallucination-reduction</a> and <a href="research.html">moral-sycophancy</a> research.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-head"><div class="skill-card-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h4"/><path d="M9 3v4.2L5.3 13a2 2 0 0 0 1.7 3h6a2 2 0 0 0 1.7-3L11 7.2V3"/><path d="M7 12.5h6"/></svg></div><h3>Computer Vision</h3></div>
-        <ul class="skill-tags"><li>OpenCV</li><li>SIFT / FLANN</li><li>Image Preprocessing</li></ul>
-        <p class="skill-context">Core to the <a href="research.html">copy-move forgery detection</a> thesis and the <a href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener">hallucination-reduction</a> pipeline.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-head"><div class="skill-card-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 6 3 10l4 4M13 6l4 4-4 4M11.3 4.3 8.7 15.7"/></svg></div><h3>Web / Software</h3></div>
-        <ul class="skill-tags"><li>HTML</li><li>CSS</li><li>PHP</li><li>JavaScript</li></ul>
-        <p class="skill-context">Used in the <a href="projects.html">OMR Sheet Evaluator</a>.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-head"><div class="skill-card-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="6" width="15" height="10.5" rx="1.5"/><path d="M7 6V4.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V6"/><path d="M2.5 11h15"/></svg></div><h3>Databases</h3></div>
-        <ul class="skill-tags"><li>MySQL</li></ul>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-head"><div class="skill-card-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.5 17.5 7 10 11.5 2.5 7 10 2.5Z"/><path d="m4.5 10-2 1.3 7.5 4.5 7.5-4.5-2-1.3"/></svg></div><h3>Research Tools</h3></div>
-        <ul class="skill-tags"><li>Git</li><li>LaTeX</li><li>Kaggle</li><li>NotebookLM</li></ul>
-      </div>
-    </div>
-
-    <section class="section-block">
-      <div class="section-head"><h2><span class="section-mark"></span>Competitive Programming</h2></div>
-      <div class="skills-grid">
-        <div><span class="skills-label">Codeforces</span><a href="https://codeforces.com/profile/shadman85" target="_blank" rel="noopener">shadman85</a> — 570+ solved</div>
-        <div><span class="skills-label">AtCoder</span><a href="https://atcoder.jp/users/shadman85" target="_blank" rel="noopener">shadman85</a> — 63+ solved</div>
-        <div><span class="skills-label">VJudge</span><a href="https://vjudge.net/user/shadman99" target="_blank" rel="noopener">shadman99</a> — 216+ solved</div>
+    <section id="competitive-programming">
+      <h2>Competitive Programming</h2>
+      <div class="judge-list">
+        <div class="judge"><span class="judge-label">Codeforces</span><a href="https://codeforces.com/profile/shadman85" target="_blank" rel="noopener noreferrer">shadman85</a> — 570+ solved</div>
+        <div class="judge"><span class="judge-label">AtCoder</span><a href="https://atcoder.jp/users/shadman85" target="_blank" rel="noopener noreferrer">shadman85</a> — 63+ solved</div>
+        <div class="judge"><span class="judge-label">VJudge</span><a href="https://vjudge.net/user/shadman99" target="_blank" rel="noopener noreferrer">shadman99</a> — 216+ solved</div>
       </div>
     </section>
 
@@ -114,16 +125,16 @@
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="projects.html">Selected Projects</a></li>
-            <li><a href="cv.pdf" target="_blank" rel="noopener">Download CV</a></li>
+            <li><a href="cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Connect</h4>
           <ul class="footer-links">
             <li><a href="mailto:shadmanrabby.cse@gmail.com">Email</a></li>
-            <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-            <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -134,6 +145,20 @@
     </footer>
   </main>
 </div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+  })();
+</script>
 </body>
 </html>
