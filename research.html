@@ -83,7 +83,7 @@
     <section id="research-experience">
       <h2>Research Experience</h2>
 
-      <div class="entry">
+     <div class="entry">
         <div class="entry-media">
           <img class="contain" src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
           <img class="contain" src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy">
@@ -93,19 +93,19 @@
           <div class="tags"><span class="tag tag--preprint">Submitted · ACL ARR Aug 2026</span><span class="tag tag--role">First Author</span></div>
           <p class="entry-sub">Supervised by Dr. Irfan Ahmad, KFUPM</p>
           <div class="metrics"><div class="metric"><span class="metric-num">&lt;3%</span><span class="metric-label">sycophancy with CoT+Vis</span></div></div>
-          <p class="entry-links"><a href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>arXiv:2602.08311</a></p>
           <p class="entry-note">Inference cost funded by SDAIA–KFUPM Joint Research Center for AI</p>
-          <details class="summary-toggle">
-            <summary>Summary</summary>
-            <div class="summary-panel">
-              <ul class="detail-list">
-                <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
-                <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
-                <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
-                <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
-              </ul>
-            </div>
-          </details>
+          <div class="entry-actions">
+            <button class="act-btn summary-btn" type="button" aria-expanded="false" aria-controls="summary-1">Summary</button>
+            <a class="act-btn" href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener noreferrer" title="arXiv:2602.08311"><i class="fa-solid fa-file-lines"></i> Pre-print</a>
+          </div>
+          <div class="summary-panel" id="summary-1" hidden>
+            <ul class="detail-list">
+              <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
+              <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
+              <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
+              <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -119,22 +119,19 @@
           <div class="tags"><span class="tag tag--preprint">Submitted · Multimedia Systems, Springer</span><span class="tag tag--role">Second Author</span></div>
           <p class="entry-sub">Supervised by Sabbir Ahmed, IUT</p>
           <div class="metrics"><div class="metric"><span class="metric-num">44.3%</span><span class="metric-label">hallucination reduction</span></div></div>
-          <p class="entry-links">
-            <a href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>Pre-print</a>
-            <span class="sep">/</span>
-            <a href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Code</a>
-          </p>
-          <details class="summary-toggle">
-            <summary>Summary</summary>
-            <div class="summary-panel">
-              <ul class="detail-list">
-                <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
-                <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
-                <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
-                <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
-              </ul>
-            </div>
-          </details>
+          <div class="entry-actions">
+            <button class="act-btn summary-btn" type="button" aria-expanded="false" aria-controls="summary-2">Summary</button>
+            <a class="act-btn" href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> Pre-print</a>
+            <a class="act-btn" href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+          <div class="summary-panel" id="summary-2" hidden>
+            <ul class="detail-list">
+              <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
+              <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
+              <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
+              <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -151,21 +148,20 @@
             <div class="metric"><span class="metric-num">95%</span><span class="metric-label">F1-score, MICC-F220</span></div>
             <div class="metric"><span class="metric-num">81%</span><span class="metric-label">F1-score, MICC-F2000</span></div>
           </div>
-          <p class="entry-links">
-            <a href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i>IEEE Xplore</a>
-            <span class="sep">/</span>
-            <a href="achievements.html"><i class="fa-solid fa-award"></i>Best Technical Presentation Award</a>
-          </p>
-          <details class="summary-toggle">
-            <summary>Summary</summary>
-            <div class="summary-panel">
-              <ul class="detail-list">
-                <li><b>Problem —</b> Copy-move forgery — duplicating a region within the same image — is a common and hard-to-detect form of digital media manipulation.</li>
-                <li><b>Method —</b> SIFT keypoint extraction paired with FLANN matching and Lowe's ratio test for reliable correspondence; an image is classified as forged once at least two keypoint pairs match, with colored patches visualizing the suspected source and copied regions.</li>
-                <li><b>Datasets —</b> MICC-F220 and MICC-F2000.</li>
-              </ul>
-            </div>
-          </details>
+          <div class="entry-actions">
+            <button class="act-btn summary-btn" type="button" aria-expanded="false" aria-controls="summary-3">Summary</button>
+            <!-- No pre-print exists for this paper. To add one, uncomment and paste the URL:
+            <a class="act-btn" href="PASTE_PREPRINT_URL" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> Pre-print</a> -->
+            <a class="act-btn" href="https://ieeexplore.ieee.org/document/11022130" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i> IEEE Xplore</a>
+            <a class="act-btn" href="achievements.html"><i class="fa-solid fa-award"></i> Best Technical Presentation Award</a>
+          </div>
+          <div class="summary-panel" id="summary-3" hidden>
+            <ul class="detail-list">
+              <li><b>Problem —</b> Copy-move forgery — duplicating a region within the same image — is a common and hard-to-detect form of digital media manipulation.</li>
+              <li><b>Method —</b> SIFT keypoint extraction paired with FLANN matching and Lowe's ratio test for reliable correspondence; an image is classified as forged once at least two keypoint pairs match, with colored patches visualizing the suspected source and copied regions.</li>
+              <li><b>Datasets —</b> MICC-F220 and MICC-F2000.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
