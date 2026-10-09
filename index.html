@@ -123,94 +123,85 @@
 
    <section id="selected-research" class="section-block">
       <div class="section-head"><h2>Selected Research</h2><a class="section-more" href="research.html">All research →</a></div>
-
-      <div class="entry">
+<div class="entry">
         <div class="entry-media">
           <img class="contain" src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
-          <img class="contain" src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy">
+     <!--     <img class="contain" src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy"> -->
         </div>
         <div class="entry-info">
           <span class="entry-title">Moral Sycophancy in Vision Language Models</span>
           <div class="tags"><span class="tag tag--preprint">Submitted · ACL ARR Aug 2026</span><span class="tag tag--role">First Author</span></div>
-          <p class="entry-sub">Supervised by Dr. Irfan Ahmad, KFUPM</p>
-          <div class="metrics"><div class="metric"><span class="metric-num">&lt;3%</span><span class="metric-label">sycophancy with CoT+Vis</span></div></div>
-          <p class="entry-links"><a href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>arXiv:2602.08311</a></p>
+          <p class="pub-authors"><b>Shadman Rabby</b>, Md. Hefzul Hossain Papon, Sabbir Ahmed, Nokimul Hasan Arif, A. B. M. Ashikur Rahman, Irfan Ahmad</p>
+
           <p class="entry-note">Inference cost funded by SDAIA–KFUPM Joint Research Center for AI</p>
-          <details class="summary-toggle">
-            <summary>Summary</summary>
-            <div class="summary-panel">
-              <ul class="detail-list">
-                <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
-                <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
-                <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
-                <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
-              </ul>
-            </div>
-          </details>
+          <div class="entry-actions">
+            <button class="act-btn summary-btn" type="button" aria-expanded="false" aria-controls="summary-1">Summary</button>
+            <a class="act-btn" href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener noreferrer" title="arXiv:2602.08311"><i class="fa-solid fa-file-lines"></i> Pre-print</a>
+          </div>
+          <div class="summary-panel" id="summary-1" hidden>
+            <ul class="detail-list">
+              <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
+              <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
+              <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
+              <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="entry">
         <div class="entry-media">
           <img class="contain" src="assets/Datasethelp.png" alt="Dataset help diagram" loading="lazy">
-          <img class="contain" src="assets/avg_nli_compare4.png" alt="Average NLI comparison results" loading="lazy">
+        <!--  <img class="contain" src="assets/avg_nli_compare4.png" alt="Average NLI comparison results" loading="lazy"> -->
         </div>
         <div class="entry-info">
           <span class="entry-title">Visual Hallucination Reduction: An Input-Level Approach for Multimodal Language Models</span>
           <div class="tags"><span class="tag tag--preprint">Submitted · Multimedia Systems, Springer</span><span class="tag tag--role">Second Author</span></div>
-          <p class="entry-sub">Supervised by Sabbir Ahmed, IUT</p>
-          <div class="metrics"><div class="metric"><span class="metric-num">44.3%</span><span class="metric-label">hallucination reduction</span></div></div>
-          <p class="entry-links">
-            <a href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>Pre-print</a>
-            <span class="sep">/</span>
-            <a href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Code</a>
-          </p>
-          <details class="summary-toggle">
-            <summary>Summary</summary>
-            <div class="summary-panel">
-              <ul class="detail-list">
-                <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
-                <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
-                <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
-                <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
-              </ul>
-            </div>
-          </details>
+          <p class="pub-authors">Nokimul Hasan Arif, <b>Shadman Rabby</b>, Md. Hefzul Hossain Papon, Sabbir Ahmed</p>
+       <div class="metrics"><div class="metric"><span class="metric-num">44.3%</span><span class="metric-label">hallucination reduction</span></div></div> 
+          <div class="entry-actions">
+            <button class="act-btn summary-btn" type="button" aria-expanded="false" aria-controls="summary-2">Summary</button>
+            <a class="act-btn" href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> Pre-print</a>
+            <a class="act-btn" href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+          <div class="summary-panel" id="summary-2" hidden>
+            <ul class="detail-list">
+              <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
+              <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
+              <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
+              <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
+
 
     <section id="selected-projects" class="section-block">
       <div class="section-head"><h2>Selected Projects</h2><a class="section-more" href="projects.html">All projects →</a></div>
 
-      <article class="pub-entry">
-        <div class="pub-thumb">
-          <img src="assets/Datasethelp.png" alt="Preprocessing pipeline for preemptive hallucination reduction" loading="lazy">
+      
+      <div class="entry">
+        <div class="entry-media">
+          <img class="contain" src="assets/omr-evaluation.jpg" alt="Illustration of an OMR answer sheet being scored" loading="lazy">
         </div>
-        <div class="pub-info">
-          <a class="pub-title" href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer">Preemptive Hallucination Reduction</a>
-          <div class="pub-venue">Python · OpenCV</div>
-          <p class="pub-summary">Reference implementation for the hallucination-reduction paper — question categorization plus adaptive image preprocessing.</p>
-          <div class="pub-links">
-            <a class="link-btn" href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
-          </div>
+        <div class="entry-info">
+          <span class="entry-title">OMR Sheet Evaluator</span>
+          <div class="tags"><span class="tag tag--role">Extended Fork</span><span class="tag tag--role">Python · OpenCV · JS · PHP · MySQL</span></div>
+          <p class="entry-text">Extended an existing open-source OMR evaluation pipeline (forked, three commits adding evaluation logic) that processes uploaded sheets with filtering, thresholding, and morphological operations to extract MCQ answers, supporting batch uploads and per-student result storage.</p>
+          <div class="btn-row"><a class="btn btn--sm btn--solid" href="https://github.com/shadman85/OMR-Evaluator" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>View on GitHub</a></div>
         </div>
-      </article>
-
-      <article class="pub-entry">
-        <div class="pub-thumb">
-          <img src="assets/omr-evaluation.jpg" alt="Illustration of an OMR answer sheet being scored" loading="lazy">
+      </div>
+        <div class="entry">
+        <div class="entry-media">
+          <img class="contain" src="assets/fruit_slicing_game.png" alt="Fruit Slicing Game screenshot" loading="lazy">
         </div>
-        <div class="pub-info">
-          <a class="pub-title" href="https://github.com/shadman85/OMR-Evaluator" target="_blank" rel="noopener noreferrer">OMR Sheet Evaluator</a>
-          <div class="pub-venue">Python · OpenCV · PHP</div>
-          <p class="pub-summary">Extended an open-source OMR evaluation pipeline with filtering, thresholding, and morphological operations.</p>
-          <div class="pub-links">
-            <a class="link-btn" href="https://github.com/shadman85/OMR-Evaluator" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
-          </div>
+        <div class="entry-info">
+          <span class="entry-title">Fruit Slicing Game</span>
+          <div class="tags"><span class="tag tag--role">C++, OpenGL v3.3</span></div>
+          <p class="entry-text">A 3D fruit-slicing game built with OpenGL.</p>
+          <div class="btn-row"><a class="btn btn--sm btn--solid" href="https://github.com/shadman85/Fruit-Slicing-Game" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>View on GitHub</a></div>
         </div>
-      </article>
-    </section>
+      </div>
     
     <section id="selected-achievements">
       <h2>Selected Achievements</h2>
