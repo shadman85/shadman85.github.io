@@ -124,35 +124,60 @@
    <section id="selected-research" class="section-block">
       <div class="section-head"><h2>Selected Research</h2><a class="section-more" href="research.html">All research →</a></div>
 
-      <article class="pub-entry">
-        <div class="pub-thumb">
-          <img src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
+      <div class="entry">
+        <div class="entry-media">
+          <img class="contain" src="assets/pbva.png" alt="Methodology Diagram — mitigation pipeline" loading="lazy">
+          <img class="contain" src="assets/moraL_syco.png" alt="Diagram illustrating moral sycophancy: a VLM reverses a correct moral judgment after user disagreement" loading="lazy">
         </div>
-        <div class="pub-info">
-          <a class="pub-title" href="research.html">Moral Sycophancy in Vision Language Models</a>
-          <div class="pub-authors">First Author</div>
-          <div class="pub-venue">Submitted, ACL ARR Aug 2026</div>
-          <p class="pub-summary">VLMs frequently abandon correct moral judgments once a user disagrees. Two training-free mitigations cut sycophancy below 3%.</p>
-          <div class="pub-links">
-            <a class="link-btn" href="research.html">Details</a>
-          </div>
+        <div class="entry-info">
+          <span class="entry-title">Moral Sycophancy in Vision Language Models</span>
+          <div class="tags"><span class="tag tag--preprint">Submitted · ACL ARR Aug 2026</span><span class="tag tag--role">First Author</span></div>
+          <p class="entry-sub">Supervised by Dr. Irfan Ahmad, KFUPM</p>
+          <div class="metrics"><div class="metric"><span class="metric-num">&lt;3%</span><span class="metric-label">sycophancy with CoT+Vis</span></div></div>
+          <p class="entry-links"><a href="https://arxiv.org/abs/2602.08311" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>arXiv:2602.08311</a></p>
+          <p class="entry-note">Inference cost funded by SDAIA–KFUPM Joint Research Center for AI</p>
+          <details class="summary-toggle">
+            <summary>Summary</summary>
+            <div class="summary-panel">
+              <ul class="detail-list">
+                <li><b>Problem —</b> VLMs are increasingly used as judges and assistants, but it's unclear whether their moral judgments hold up once a user pushes back.</li>
+                <li><b>Finding —</b> VLMs frequently abandon correct moral judgments once a user disagrees, even without new evidence, and are far more likely to shift from right to wrong than the reverse — a clear agreement bias. Open-source models are substantially more susceptible than proprietary ones.</li>
+                <li><b>Method —</b> Two training-free mitigations: <b>CoT+Vis</b> (chain-of-thought reasoning grounded in the visual evidence) and <b>Pressure-Blind Visual Arbitration</b>.</li>
+                <li><b>Datasets —</b> Evaluated on Moralise and MM-MoralBench.</li>
+              </ul>
+            </div>
+          </details>
         </div>
-      </article>
+      </div>
 
-      <article class="pub-entry">
-        <div class="pub-thumb">
-          <img src="assets/avg_nli_compare4.png" alt="Average NLI comparison results" loading="lazy">
+      <div class="entry">
+        <div class="entry-media">
+          <img class="contain" src="assets/Datasethelp.png" alt="Dataset help diagram" loading="lazy">
+          <img class="contain" src="assets/avg_nli_compare4.png" alt="Average NLI comparison results" loading="lazy">
         </div>
-        <div class="pub-info">
-          <a class="pub-title" href="research.html">Visual Hallucination Reduction</a>
-          <div class="pub-authors">Second Author</div>
-          <div class="pub-venue">Submitted, Multimedia Systems (Springer)</div>
-          <p class="pub-summary">An adaptive, model-agnostic image-preprocessing method that cuts VLM hallucinations by 44.3% without retraining.</p>
-          <div class="pub-links">
-            <a class="link-btn" href="research.html">Details</a>
-          </div>
+        <div class="entry-info">
+          <span class="entry-title">Visual Hallucination Reduction: An Input-Level Approach for Multimodal Language Models</span>
+          <div class="tags"><span class="tag tag--preprint">Submitted · Multimedia Systems, Springer</span><span class="tag tag--role">Second Author</span></div>
+          <p class="entry-sub">Supervised by Sabbir Ahmed, IUT</p>
+          <div class="metrics"><div class="metric"><span class="metric-num">44.3%</span><span class="metric-label">hallucination reduction</span></div></div>
+          <p class="entry-links">
+            <a href="https://www.researchsquare.com/article/rs-7167438/v1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>Pre-print</a>
+            <span class="sep">/</span>
+            <a href="https://github.com/shadman85/preemptive_hallucination_reduction" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Code</a>
+          </p>
+          <details class="summary-toggle">
+            <summary>Summary</summary>
+            <div class="summary-panel">
+              <ul class="detail-list">
+                <li><b>Problem —</b> Reducing visual hallucination usually means retraining or fine-tuning the model — expensive, and out of reach for many downstream users.</li>
+                <li><b>Method —</b> A model-agnostic, adaptive image-preprocessing pipeline that chooses a noise-reduced, edge-enhanced, or original version of the image per question type, before it ever reaches the VLM.</li>
+                <li><b>Technique —</b> Question-type categorization + Laplacian edge sharpening / median-filter denoising.</li>
+                <li><b>Result —</b> No retraining or architecture changes required — the model is used exactly as-is.</li>
+              </ul>
+            </div>
+          </details>
         </div>
-      </article>
+      </div>
     </section>
 
     <section id="selected-projects" class="section-block">
