@@ -11,7 +11,7 @@
 <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#3F6E5C">
+<meta name="theme-color" content="#1772d0">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shadman Rabby">
 <meta property="og:title" content="Contact — Shadman Rabby">
@@ -24,95 +24,79 @@
 <meta name="twitter:image" content="https://shadman85.github.io/assets/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Shadman Rabby</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html" class="is-active" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
 <div class="layout">
-<input type="checkbox" id="nav-toggle" class="nav-toggle">
-<aside class="sidebar">
-  <div class="sidebar-top">
-    <a href="index.html" class="wordmark">SR</a>
-    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </label>
-  </div>
-  <nav class="side-nav">
-      <a href="index.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9.5 10 3l7 6.5"/><path d="M5 8.5V17h10V8.5"/><path d="M8 17v-5h4v5"/></svg><span>Home</span></a>
-      <a href="education.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7.5 10 4l8 3.5-8 3.5-8-3.5Z"/><path d="M5.5 9.3V13c0 1.2 2 2.3 4.5 2.3s4.5-1.1 4.5-2.3V9.3"/><path d="M17 8v5"/></svg><span>Education</span></a>
-      <a href="research.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h4"/><path d="M9 3v4.2L5.3 13a2 2 0 0 0 1.7 3h6a2 2 0 0 0 1.7-3L11 7.2V3"/><path d="M7 12.5h6"/></svg><span>Research</span></a>
-      <a href="publications.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 2.5h7l3 3v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-14a.5.5 0 0 1 .5-.5Z"/><path d="M12 2.5V6h3.2"/><path d="M7 10.2h6M7 12.7h6M7 15.2h3.5"/></svg><span>Publications</span></a>
-      <a href="experience.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="6" width="15" height="10.5" rx="1.5"/><path d="M7 6V4.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V6"/><path d="M2.5 11h15"/></svg><span>Experience</span></a>
-      <a href="projects.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 6 3 10l4 4M13 6l4 4-4 4M11.3 4.3 8.7 15.7"/></svg><span>Projects</span></a>
-      <a href="skills.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.5 17.5 7 10 11.5 2.5 7 10 2.5Z"/><path d="m4.5 10-2 1.3 7.5 4.5 7.5-4.5-2-1.3"/></svg><span>Skills</span></a>
-      <a href="achievements.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="7.2" r="4.2"/><path d="M7.3 10.7 6.3 17l3.7-2 3.7 2-1-6.4"/></svg><span>Achievements</span></a>
-      <a href="contact.html" class="is-active" aria-current="page"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="m3 5.5 7 5.5 7-5.5"/></svg><span>Contact</span></a>
-  </nav>
-  <div class="sidebar-bottom">
-    <a href="mailto:shadmanrabby.cse@gmail.com"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="m3 5.5 7 5.5 7-5.5"/></svg><span>Email</span></a>
-    <a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7.5 10 4l8 3.5-8 3.5-8-3.5Z"/><path d="M5.5 9.3V13c0 1.2 2 2.3 4.5 2.3s4.5-1.1 4.5-2.3V9.3"/></svg><span>Google Scholar</span></a>
-    <a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="15" height="15" rx="2"/><path d="M6.8 8.5v6M6.8 6.2v.1M10.2 14.5v-3.7c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v3.7"/></svg><span>LinkedIn</span></a>
-    <a href="https://github.com/shadman85" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.2c-4.3 0-7.8 3.5-7.8 7.8 0 3.4 2.2 6.4 5.3 7.4.4.1.5-.2.5-.4v-1.5c-2.2.5-2.6-.9-2.6-.9-.4-.9-.9-1.1-.9-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3-1.8 3.7-3.6 3.9.3.2.5.7.5 1.4v2.1c0 .2.1.5.6.4 3.1-1 5.3-4 5.3-7.4 0-4.3-3.5-7.8-7.8-7.8Z"/></svg><span>GitHub</span></a>
-  </div>
-</aside>
+
+  <aside class="sidebar">
+    <img class="portrait" src="assets/Shadman_Rabby.jpg" alt="Portrait of Shadman Rabby" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="portrait-fallback" aria-hidden="true">SR</div>
+    <p class="side-name">Shadman Rabby</p>
+    <p class="role">Lecturer, Dept. of CSE</p>
+    <p class="affiliation">Daffodil International University</p>
+    <p class="affiliation">M.Sc. student, University of Dhaka</p>
+    <ul class="profile-links">
+      <li><a href="mailto:shadmanrabby.cse@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+  </aside>
+
   <main class="content">
-    <section class="page-hero" style="border-bottom:none;margin-bottom:0;">
-      <div class="contact-hero">
-        <div>
-          <p class="eyebrow">Get in Touch</p>
-          <h1 class="page-title" style="margin-bottom:14px;">Let's talk research</h1>
-          <p class="contact-intro">
-            I'm applying to PhD programs in computer vision and trustworthy
-            multimodal AI. If you're a prospective advisor or collaborator, I'd love
-            to hear from you.
-          </p>
-        </div>
-        <div class="contact-portrait">
-          <img src="assets/Shadman_Rabby.jpg" alt="Portrait of Shadman Rabby" onerror="this.style.display='none';">
-        </div>
-      </div>
+    <section class="page-head">
+      <p class="eyebrow">Get in Touch</p>
+      <h1 class="page-title">Let's talk research</h1>
+      <p class="page-intro">I'm applying to PhD programs in computer vision and trustworthy multimodal AI. If you're a prospective advisor or collaborator, I'd love to hear from you.</p>
     </section>
-
-    <section class="section-block" style="margin-top:36px;">
-      <div class="contact-columns">
+    <section>
+      <div class="grid grid--2">
         <div class="contact-col">
-          <h2><span class="section-mark"></span>Academic Contact</h2>
+          <h3>Academic Contact</h3>
           <p class="contact-col-note">The fastest way to reach me — email directly, or download the full CV below.</p>
-          <div class="contact-grid">
-            <a class="contact-card" href="mailto:shadmanrabby.cse@gmail.com">
-              <div class="contact-card-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="m3 5.5 7 5.5 7-5.5"/></svg></div>
-              <div><span class="contact-card-label">Email</span><span class="contact-card-value">shadmanrabby.cse@gmail.com</span></div>
-            </a>
+          <div class="stack">
+            <a class="contact-card" href="mailto:shadmanrabby.cse@gmail.com"><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span><span><span class="contact-label">Email</span><span class="contact-value">shadmanrabby.cse@gmail.com</span></span></a>
           </div>
         </div>
         <div class="contact-col">
-          <h2><span class="section-mark"></span>Online Profiles</h2>
+          <h3>Online Profiles</h3>
           <p class="contact-col-note">Publication record, professional network, and code.</p>
-          <div class="contact-grid">
-            <a class="contact-card" href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-              <div class="contact-card-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7.5 10 4l8 3.5-8 3.5-8-3.5Z"/><path d="M5.5 9.3V13c0 1.2 2 2.3 4.5 2.3s4.5-1.1 4.5-2.3V9.3"/></svg></div>
-              <div><span class="contact-card-label">Google Scholar</span><span class="contact-card-value">scholar.google.com/citations</span></div>
-            </a>
-            <a class="contact-card" href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">
-              <div class="contact-card-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="15" height="15" rx="2"/><path d="M6.8 8.5v6M6.8 6.2v.1M10.2 14.5v-3.7c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v3.7"/></svg></div>
-              <div><span class="contact-card-label">LinkedIn</span><span class="contact-card-value">linkedin.com/in/shadman-rabby</span></div>
-            </a>
-            <a class="contact-card" href="https://github.com/shadman85" target="_blank" rel="noopener">
-              <div class="contact-card-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.2c-4.3 0-7.8 3.5-7.8 7.8 0 3.4 2.2 6.4 5.3 7.4.4.1.5-.2.5-.4v-1.5c-2.2.5-2.6-.9-2.6-.9-.4-.9-.9-1.1-.9-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3-1.8 3.7-3.6 3.9.3.2.5.7.5 1.4v2.1c0 .2.1.5.6.4 3.1-1 5.3-4 5.3-7.4 0-4.3-3.5-7.8-7.8-7.8Z"/></svg></div>
-              <div><span class="contact-card-label">GitHub</span><span class="contact-card-value">github.com/shadman85</span></div>
-            </a>
+          <div class="stack">
+            <a class="contact-card" href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><i class="fa-brands fa-google-scholar"></i></span><span><span class="contact-label">Google Scholar</span><span class="contact-value">scholar.google.com/citations</span></span></a>
+            <a class="contact-card" href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span><span><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/shadman-rabby</span></span></a>
+            <a class="contact-card" href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><i class="fa-brands fa-github"></i></span><span><span class="contact-label">GitHub</span><span class="contact-value">github.com/shadman85</span></span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-block">
+    <section>
       <div class="cta-band">
         <h2>CV &amp; Research Materials</h2>
         <p>The full CV covers education, research experience, publications, teaching, and achievements in one document.</p>
-        <div class="btn-row">
-          <a class="btn btn--accent" href="cv.pdf" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 2.5h7l3 3v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-14a.5.5 0 0 1 .5-.5Z"/><path d="M12 2.5V6h3.2"/><path d="M7 10.2h6M7 12.7h6M7 15.2h3.5"/></svg><span>Download CV</span></a>
-        </div>
+        <div class="btn-row"><a class="btn btn--solid" href="cv.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>Download CV</a></div>
       </div>
     </section>
 
@@ -128,16 +112,16 @@
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="projects.html">Selected Projects</a></li>
-            <li><a href="cv.pdf" target="_blank" rel="noopener">Download CV</a></li>
+            <li><a href="cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Connect</h4>
           <ul class="footer-links">
             <li><a href="mailto:shadmanrabby.cse@gmail.com">Email</a></li>
-            <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-            <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/shadman85" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=o8heBaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/shadman-rabby-1598b6211/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/shadman85" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -148,6 +132,20 @@
     </footer>
   </main>
 </div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+  })();
+</script>
 </body>
 </html>
